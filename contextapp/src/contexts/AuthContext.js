@@ -3,10 +3,10 @@ import React, { Component, createContext } from 'react';
 
 
 
-const AuthContext = createContext()
+export const AuthContext = createContext()
 class AuthContextProvider extends Component {
     state = { 
-        isAuthenticated: false
+        isAuthenticated: true
      }
 
      toggleAuth = () => {
